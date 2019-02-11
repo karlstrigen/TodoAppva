@@ -3,7 +3,10 @@
 @{
     ViewData["Title"] = "Delete";
 }
-
+<!--
+This view describes how the site is to look when deleting a list item.
+It was created when scaffolding the ListItem model and then modified by me.
+-->
 <h2>Delete</h2>
 
 <h3>Are you sure you want to delete this?</h3>
@@ -24,7 +27,7 @@
             @Html.DisplayFor(model => model.DoneDate)
         </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="ID" />
         <input type="submit" value="Delete" class="btn btn-default" /> |

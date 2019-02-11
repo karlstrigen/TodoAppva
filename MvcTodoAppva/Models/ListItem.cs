@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
+//This is the model for the items on the to do list, and as such it also describes the attributes which will be stored in the database
+//for each list entry.
 namespace MvcTodoAppva.Models
 {
     public class ListItem

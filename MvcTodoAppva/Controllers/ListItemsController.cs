@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcTodoAppva.Models;
 
+//Controller for the main page of the site. Created when scaffolding the ListItem model.
 namespace MvcTodoAppva.Controllers
 {
     public class ListItemsController : Controller

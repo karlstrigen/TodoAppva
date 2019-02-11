@@ -29,7 +29,8 @@ namespace MvcTodoAppva
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
+                // I put it to false since no cookies are present atm.
+                options.CheckConsentNeeded = context => false;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
@@ -61,6 +62,7 @@ namespace MvcTodoAppva
             {
                 routes.MapRoute(
                     name: "default",
+                    //Defining the default action of the site to ListItem.
                     template: "{controller=ListItems}/{action=Index}/{id?}");
             });
         }

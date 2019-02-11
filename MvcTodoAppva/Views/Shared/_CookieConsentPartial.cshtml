@@ -1,6 +1,8 @@
 ﻿@using Microsoft.AspNetCore.Http.Features
 
 @{
+    //This view was created by default when initializing the project. It is not used right now since no cookies are implemented.
+    //I figured it might as well still be here though, if one would want to implement cookies for the website at a later stage.
     var consentFeature = Context.Features.Get<ITrackingConsentFeature>();
     var showBanner = !consentFeature?.CanTrack ?? false;
     var cookieString = consentFeature?.CreateConsentCookie();
